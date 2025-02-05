@@ -1,0 +1,57 @@
+<!--Shubu Aryal-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Cheesecake Order Form</title>
+        <link rel="stylesheet" href="stylesheets/aryal27.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="javascripts/cheesecake.js"></script> <!-- reference javascript src code -->
+    </head>
+    <body>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Mondays_at_Il_Forno_-_Cheesecake_with_strawberry_sauce.jpg" width="350px" height="230px">
+        <h1>Cheesecake Order Form</h1>
+
+        <div id="orderForm">
+            <p>Quantity:</p>
+            <select id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <div class="toppings">
+                <input type="radio" name="topping" id="R1" value="Plain">
+                <label for="R1">Plain</label>
+
+                <input type="radio" name="topping" id="R2" value="Cherry">
+                <label for="R2">Cherry</label>
+
+                <input type="radio" name="topping" id="R3" value="Chocolate">
+                <label for="R3">Chocolate</label>
+            </div>            
+
+            <p>Notes:</p>
+            <textarea id="notes" rows="4" cols="50" placeholder="Enter any special instructions here..."></textarea>
+
+            <br><br>
+            <button type="submit" id="submitButton">Order</button>
+        </div>
+
+        <!-- Hover Dropdown for Selecting Month -->
+        <h2>Orders for <span id="selected-month">Jan</span></h2>
+        <div class="dropdown">
+            <button class="dropdown-button">Select Month</button>
+            <div class="dropdown-content" id="month-list"></div>
+        </div>
+
+        <ul>
+            <li>11 cherry</li>
+            <li>17 chocolate</li>
+            <li>31 plain</li>
+        </ul>
+
+    </body>
+</html>
